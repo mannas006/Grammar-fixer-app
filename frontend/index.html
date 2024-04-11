@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Fixer</title>
+</head>
+<body>
+    <h1>Grammar Fixer</h1>
+    <textarea id="inputText" rows="10" cols="50" placeholder="Enter text to fix grammar"></textarea><br>
+    <button onclick="fixGrammar()">Fix Grammar</button>
+    <br><br>
+    <h2>Fixed Text</h2>
+    <div id="outputText"></div>
+
+    <script>
+        async function fixGrammar() {
+            const inputText = document.getElementById('inputText').value;
+            const response = await fetch('/api/fix-grammar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: inputText })
+            });
+            const data = await response.json();
+            document.getElementById('outputText').innerText = data.fixedText;
+        }
+    </script>
+</body>
+</html>

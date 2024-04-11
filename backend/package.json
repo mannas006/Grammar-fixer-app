@@ -1,0 +1,11 @@
+{
+    "name": "grammar-fixer-backend",
+    "version": "1.0.0",
+    "description": "Backend for the Grammar Fixer web app",
+    "main": "server.js",
+    "dependencies": {
+        "express": "^4.17.2",
+        "gpt-api": "^1.0.0",
+        "cors": "^2.8.5"
+    }
+}
