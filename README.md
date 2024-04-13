@@ -1,7 +1,3 @@
-Here's a template for a GitHub README file for your Grammar Fixer web app project:
-
----
-
 # Grammar Fixer Web App
 
 This web application allows users to input text and fix grammar using the GPT API.
@@ -75,8 +71,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+Replace placeholders like `your-username` with your actual GitHub username, and `your_api_key_here` with your GPT API key.
 ---
 
-Replace placeholders like `your-username` with your actual GitHub username, and `your_api_key_here` with your GPT API key.
 
-Save this content in a file named `README.md` in the root directory of your GitHub repository. You can also add more sections or customize the content further based on your project's specific details and requirements.
